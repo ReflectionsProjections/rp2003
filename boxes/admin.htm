@@ -1,0 +1,162 @@
+<HTML>
+<fieldset>
+
+<p align ="center">
+	<font size="4q" face="Arial,
+Helvetica, sans-serif"> Welcome to the Admin interface.  Here, you can get a list of people signed up for a given date and time, or you can assign a faciliator for a session.</font></p>
+
+            <form name="attendee" action="admin.php">
+            <table width="100%" border="0" cellpadding="1" cellspacing="1">
+                <tr> 
+
+                <tr> 
+                  <td align="right"><font size="2" face="Arial, Helvetica, sans-serif">Month:</font></td>
+                  <td><select name="month">
+                      <option value="10">October</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr> 
+                  <td align="right"><font size="2" face="Arial, Helvetica, sans-serif">Day:</font></td>
+                  <td><select name="day">
+                      <option value="01">Pick a Day</option>
+ 		 
+		 <option value="06">06</option>
+		 <option value="07">07</option>
+		 <option value="08">08</option>
+		 <option value="09">09</option>
+	 
+		 <option value="12">12</option>
+		 <option value="13">13</option>
+		 <option value="14">14</option>
+		 <option value="15">15</option>
+		
+		 <option value="19">19</option>
+		 <option value="20">20</option>
+		 <option value="21">21</option>
+		 <option value="22">22</option>
+		
+		 <option value="26">26</option>
+		 <option value="27">27</option>
+		 <option value="28">28</option>
+		 <option value="29">29</option>
+
+                    </select>
+                  </td>
+                </tr>
+
+                <tr> 
+                  <td align="right"><font size="2" face="Arial, Helvetica, sans-serif">Time:</font></td>
+                  <td><select name="time">
+
+		<option value="05:00">5:00</option>
+		<option value="05:30">5:30</option>
+		<option value="06:00">6:00</option>
+		<option value="06:30">6:30</option>
+		<option value="07:00">7:00</option>
+		<option value="07:30">7:30</option>
+		<option value="08:00">8:00</option>
+		<option value="08:30">8:30</option>
+		<option value="09:00">9:00</option>
+
+                    </select>
+                  </td>
+                </tr>
+
+                <tr> 
+                  <td align="right">&nbsp;</td>
+                  <td><input name="Submit" type="submit" value="Submit"><input name="Reset" type="reset" id="Reset" value="Reset"></td>
+                </tr>
+
+                <tr> 
+                  <td align="right"><font size="2" face="Arial,Helvetica, sans-serif">To assign a facilitator to a session, enter name:</font></td>
+                  <td> <input name="presenter" type="text" id="presenter" size="30" maxlength="30"></td>
+
+                </tr>
+
+                <tr> 
+                  <td align="right">&nbsp;</td>
+                  <td><input name="Submit" type="submit" value="Submit"><input name="Reset" type="reset" id="Reset" value="Reset"></td>
+                </tr>
+
+                  </table>
+                  </form>
+                  </fieldset><br>
+
+</table>
+<fieldset>
+<p align ="center">
+	<font size="4q" face="Arial,
+Helvetica, sans-serif">  Use this box to close a  session for more registrations.  Simply select a time and date, then hit suspend registrations.  email vilas if you want to open them again.</p>
+
+            <form name="attendee" action="admin_closereg.php">
+            <table width="100%" border="0" cellpadding="1" cellspacing="1">
+                <tr> 
+
+                <tr> 
+                  <td align="right"><font size="2" face="Arial, Helvetica, sans-serif">Month:</font></td>
+                  <td><select name="month">
+                      <option value="10">October</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr> 
+                  <td align="right"><font size="2" face="Arial, Helvetica, sans-serif">Day:</font></td>
+                  <td><select name="day">
+                      <option value="01">Pick a Day</option>
+ 		 
+		 <option value="06">06</option>
+		 <option value="07">07</option>
+		 <option value="08">08</option>
+		 <option value="09">09</option>
+	 
+		 <option value="12">12</option>
+		 <option value="13">13</option>
+		 <option value="14">14</option>
+		 <option value="15">15</option>
+		
+		 <option value="19">19</option>
+		 <option value="20">20</option>
+		 <option value="21">21</option>
+		 <option value="22">22</option>
+		
+		 <option value="26">26</option>
+		 <option value="27">27</option>
+		 <option value="28">28</option>
+		 <option value="29">29</option>
+
+                    </select>
+                  </td>
+                </tr>
+
+                <tr> 
+                  <td align="right"><font size="2" face="Arial, Helvetica, sans-serif">Time:</font></td>
+                  <td><select name="time">
+
+		<option value="05:00">5:00</option>
+		<option value="05:30">5:30</option>
+		<option value="06:00">6:00</option>
+		<option value="06:30">6:30</option>
+		<option value="07:00">7:00</option>
+		<option value="07:30">7:30</option>
+		<option value="08:00">8:00</option>
+		<option value="08:30">8:30</option>
+		<option value="09:00">9:00</option>
+
+                    </select>
+                  </td>
+                </tr>
+
+                <tr> 
+                  <td align="right">&nbsp;</td>
+                  <td><input name="submit" type="submit" value="Suspend Registration"><input name="Reset" type="reset" id="Reset" value="Reset"></td>
+                </tr>
+
+                  </table>
+                  </form>
+                  </fieldset><br>
+
+</table>
+

@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>Registration Succesful for Reflections | Projections</title>
+<meta http-equiv="Content-Type" content="text/html;">
+<meta name="author" content="Shahrukh Syed">
+<meta name="description" content="Reflections | Projections 2002 is the Annual Student Computing Conference sponsored by the University of Illinois chapter of the Association for Computing Machinery.">
+<meta name="keywords" content="ACM, Association for Computing Machinery, conferences, jobs, resume, recruiting, software, hardware, developers">
+<script language="JavaScript">
+<!--
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+ var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+   var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+   if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+<style>
+body, table {font-family:"trebuchet ms,tahoma,verdana";font-size:13px;}
+a:hover {color:red;}
+</style>
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0"  onLoad="MM_preloadImages('images/generic_r2_c2_f2.jpg','images/generic_r2_c3_f2.jpg','images/generic_r2_c4_f2.jpg','images/generic_r2_c5_f2.jpg','images/generic_r2_c7_f2.gif');" link="#339933" vlink="#330099">
+<div id="Layer1" style="position:absolute; width:650px; height:361px; z-index:1; left: 57px; top: 160px"> 
+<?php
+    /* Connecting, selecting database */
+    $link = mysql_connect("localhost","dhar","monkeyboy") or die("Could not connect");
+    mysql_select_db("conference") or die("Could not select database");
+
+    /* Performing SQL query */
+   #$insert = "INSERT INTO studs SET compname=\"$compname\",repname=\"$repname\",repemail=\"$repemail\",url=\"$url\",address=\"$address1\",address2=\"$address2\",city =\"$city\", state=\"$state\",zip=\"$zip\",phone =\"$phone\",fax=\"$fax\",type=\"$type\",pre_reg=1,printed=0,paid=0,checked_in=0";
+   $insert = "INSERT INTO studs SET compname=\"$compname\",repname=\"$repname\",repemail=\"$repemail\",url=\"$url\",address=\"$address1\",address2=\"$address2\",city =\"$city\", state=\"$state\",zip=\"$zip\",phone =\"$phone\",fax=\"$fax\",type=\"$type\"";
+
+
+    $work = mysql_query($insert) or die ("insert failed, please email conference@acm.uiuc.edu");
+
+    print "<H3>Thank you for registering for Reflections|Projections 2003.   Representatives";
+    print " from the Reflections Projections Committee will provide further information";
+    print " regarding the conference as it approaches.  Please note that any";
+    print " queries can be sent directly to Vilas Dhar at dhar@uiuc.edu.";
+    /* Free resultset */
+//    mysql_free_result($result);
+
+    /* Closing connection */
+    mysql_close($link);
+?>
+
+
+
+
+</div>
+<table border="0" cellpadding="0" cellspacing="0" width="800">
+<!-- fwtable fwsrc="secondary basic.png" fwbase="generic.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+  <tr>
+   <td><img src="images/spacer.gif" width="28" height="1" border="0"></td>
+   <td><img src="images/spacer.gif" width="110" height="1" border="0"></td>
+   <td><img src="images/spacer.gif" width="116" height="1" border="0"></td>
+   <td><img src="images/spacer.gif" width="152" height="1" border="0"></td>
+   <td><img src="images/spacer.gif" width="21" height="1" border="0"></td>
+   <td><img src="images/spacer.gif" width="117" height="1" border="0"></td>
+   <td><img src="images/spacer.gif" width="114" height="1" border="0"></td>
+   <td><img src="images/spacer.gif" width="142" height="1" border="0"></td>
+   <td><img src="images/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+   <td colspan="2"><img name="generic_r1_c1" src="images/generic_r1_c1.jpg" width="138" height="90" border="0"></td>
+   <td colspan="3"><img name="generic_r1_c3" src="images/generic_r1_c3.jpg" width="289" height="90" border="0"></td>
+   <td colspan="3"><img name="generic_r1_c6" src="images/generic_r1_c6.jpg" width="373" height="90" border="0"></td>
+   <td><img src="images/spacer.gif" width="1" height="90" border="0"></td>
+  </tr>
+  <tr>
+   <td rowspan="2"><img name="generic_r2_c1" src="images/generic_r2_c1.jpg" width="28" height="442" border="0"></td>
+   <td><a href="about.html" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('generic_r2_c2','','images/generic_r2_c2_f2.jpg',1);" ><img name="generic_r2_c2" src="images/generic_r2_c2.jpg" width="110" height="24" border="0"></a></td>
+   <td><a href="events.html" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('generic_r2_c3','','images/generic_r2_c3_f2.jpg',1);" ><img name="generic_r2_c3" src="images/generic_r2_c3.jpg" width="116" height="24" border="0"></a></td>
+   <td><a href="register.html" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('generic_r2_c4','','images/generic_r2_c4_f2.jpg',1);" ><img name="generic_r2_c4" src="images/generic_r2_c4.jpg" width="152" height="24" border="0"></a></td>
+   <td colspan="2"><a href="sponsor.html" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('generic_r2_c5','','images/generic_r2_c5_f2.jpg',1);" ><img name="generic_r2_c5" src="images/generic_r2_c5.jpg" width="138" height="24" border="0"></a></td>
+   <td><a href="index.html" onMouseOut="MM_swapImgRestore();"  onMouseOver="MM_swapImage('generic_r2_c7','','images/generic_r2_c7_f2.gif',1);" ><img name="generic_r2_c7" src="images/generic_r2_c7.gif" width="114" height="24" border="0"></a></td>
+   <td rowspan="2"><img name="generic_r2_c8" src="images/generic_r2_c8.jpg" width="142" height="442" border="0"></td>
+   <td><img src="images/spacer.gif" width="1" height="24" border="0"></td>
+  </tr>
+  <tr>
+   <td colspan="6"><img name="generic_r3_c2" src="images/generic_r3_c2.jpg" width="630" height="418" border="0"></td>
+   <td><img src="images/spacer.gif" width="1" height="418" border="0"></td>
+  </tr>
+  <tr>
+   <td colspan="8"><img name="generic_r4_c1" src="images/generic_r4_c1.gif" width="800" height="68" border="0"></td>
+   <td><img src="images/spacer.gif" width="1" height="68" border="0"></td>
+  </tr>
+</table>
+</body>
+</html>

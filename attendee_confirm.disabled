@@ -1,0 +1,27 @@
+<?php
+extract($_REQUEST);
+        include "register_top.htm";
+/* Connecting, selecting database */
+    $link = mysql_connect("localhost","dhar","monkeyboy")
+        or die("Could not connect");
+    mysql_select_db("conference") or die("Could not select database");
+
+    /* Performing SQL query */
+    $query = "SELECT * FROM studs";
+    $result = mysql_query($query) or die("Query failed");
+    $insert = " INSERT INTO studs SET firstname=\"$firstname\",lastname=\"$lastname\",prettyname=\"$prettyname\",address=\"$address1\",address2=\"$address2\", city =\"$city\", state = \"$state\",zip=\"$zipcode\",phone = \"$phone\",email=\"$email\",school = \"$school_org\",printed=0,paid=0,checked_in=0,pre_reg=0,shirt=0 ";
+    $work = mysql_query($insert) or die ("insert failed");
+
+    print "<font color=\"#FFFFFF\" size=\"2\" face=\"Arial, Helvetica,
+    sans-serif\">Thank  you for registering for Reflections Projections 2003.  Be on the";
+    print " lookout for information and publicity coming your way, and we'll see you in";
+    print " Urbana in October!</font>";
+    /* Free resultset */
+    mysql_free_result($result);
+
+    /* Closing connection */
+    mysql_close($link);
+
+    include "register_bottom.htm";
+?>
+

@@ -1,0 +1,100 @@
+<HTML>
+<fieldset>
+
+            <form name="attendee" action="attendee_confirm.php">
+            <table width="100%" border="0" cellpadding="1"
+cellspacing="1">
+                <tr> 
+                  <td width="35%" align="right"><font size="2"
+face="Arial, Helvetica, sans-serif">
+                    Name:</font></td>
+                  <td><input name="name" type="text" id="name" size="30"
+maxlength="30">
+                  </td>
+                </tr>
+                <tr> 
+                  <td align="right"><font size="2" face="Arial,
+Helvetica, sans-serif">NETID (UIUC ONLY) or Email Address:</font></td>
+                  <td><input name="netid" type="text" id="netid"
+size="30" maxlength="30"></td>
+                </tr>
+                <tr> 
+
+                <tr> 
+                  <td align="right"><font size="2" face="Arial,
+Helvetica, sans-serif">Month:</font></td>
+                  <td><select name="month">
+                      <option value="10">October</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr> 
+                  <td align="right"><font size="2" face="Arial,
+Helvetica, sans-serif">Day:</font></td>
+                  <td><select name="day">
+                      <option value="01">Pick a Day</option>
+ 		 
+		 <option value="06">06</option>
+		 <option value="07">07</option>
+		 <option value="08">08</option>
+		 <option value="09">09</option>
+	 
+		 <option value="12">12</option>
+		 <option value="13">13</option>
+		 <option value="14">14</option>
+		 <option value="15">15</option>
+		
+		 <option value="19">19</option>
+		 <option value="20">20</option>
+		 <option value="21">21</option>
+		 <option value="22">22</option>
+		
+		 <option value="26">26</option>
+		 <option value="27">27</option>
+		 <option value="28">28</option>
+		 <option value="29">29</option>
+
+                    </select>
+                  </td>
+                </tr>
+
+
+                <tr> 
+                  <td align="right"><font size="2" face="Arial, Helvetica, sans-serif">Time:</font></td>
+                  <td><select name="time">
+
+
+		<option value="05:00">5:00</option>
+		<option value="05:30">5:30</option>
+		<option value="06:00">6:00</option>
+		<option value="06:30">6:30</option>
+		<option value="07:00">7:00</option>
+		<option value="07:30">7:30</option>
+		<option value="08:00">8:00</option>
+		<option value="08:30">8:30</option>
+		<option value="09:00">9:00</option>
+
+
+
+
+                    </select>
+                  </td>
+                </tr>
+
+
+
+
+
+
+
+                <tr> 
+                  <td align="right">&nbsp;</td>
+                  <td><input name="Submit" type="submit" value="Submit">
+<input name="Reset" type="reset" id="Reset" value="Reset"></td>
+                </tr>
+                  </table>
+                  </form>
+                  </fieldset><br>
+
+</table>

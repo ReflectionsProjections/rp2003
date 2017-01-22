@@ -1,0 +1,192 @@
+\<html>
+<head>
+<title>Boxes and Walls - Tour Sign-Up</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="white" vlink="orange">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" name="header" height="626" style="border-collapse: collapse" bordercolor="#111111">
+  <tr> 
+    <td width="160" bgcolor="333366" height="100"><a href="http://www.uiuc.edu/ro/boxesandwalls"><img src="http://www.uiuc.edu/ro/boxesandwalls/images/weblogo.gif" width="160" height="105" alt="Boxes and Walls - The
+Oppression Experiment"
+border="0"></a></td>
+    <td bgcolor="#333366" width="17" height="100">&nbsp;</td>
+    <td bgcolor="#333366" height="100" width="796" align="center" valign="top">
+    <table width="848" border="0" cellspacing="0" cellpadding="0" height="118">
+        <tr align="center" valign="middle"> 
+          <td height="118" width="848"> 
+            <h2 align="center"> 
+            <font face="Arial, Helvetica, sans-serif" color="#FFFFFF">EXPERIENCE 
+              IT! BE A PART OF IT! <br>
+              MAKE A DIFFERENCE!</font></h2>
+          </td>
+        </tr>
+</table>
+    </td>
+  </tr>
+  <tr> 
+    <td width="160" bgcolor="333366" height="21"> 
+      <div align="right"><img src="http://www.uiuc.edu/ro/boxesandwallsimages/curveleft.gif" width="4" height="21"></div>
+    </td>
+    <td width="17" background="images/topback.gif" height="21"> 
+      <div align="left"><img src="images/curveright.gif" width="17" height="21"></div>
+    </td>
+    <td width="796" background="images/topback.gif" height="21">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="160" bgcolor="333366" background="images/sideback.gif" align="left" valign="top" height="505"> 
+          
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+  <tr>
+    <td>
+      <table width="100%" border="0" cellpadding="2" cellspacing="1">
+        <tr> 
+          <td><a href="about.asp" class="menulinks">What is it?</a></td>
+        </tr>
+        <tr> 
+          <td><a href="http://www.uiuc.edu/ro/boxesandwalls/" class="menulinks">Sign-up to Attend</a></td>
+        </tr>
+        <tr> 
+          <td><a href="http://www.uiuc.edu/ro/boxesandwallsvolunteer.asp" class="menulinks">Volunteer</a></td>
+        </tr>
+        <tr> 
+          <td><a href="http://www.uiuc.edu/ro/boxesandwallsroomcoordinators.asp" class="menulinks">Room Coordinators</a></td>
+        </tr>
+        <tr> 
+          <td><a href="http://www.uiuc.edu/ro/boxesandwallstourguides.asp" class="menulinks">Tour Guides</a></td>
+        </tr>
+        <tr> 
+          <td><a href="http://www.uiuc.edu/ro/boxesandwallsprocessors.asp" class="menulinks">Staff Faculty Processors</a></td>
+        </tr>
+        <tr> 
+          <td><a href="http://www.uiuc.edu/ro/boxesandwallsfloorplan.asp" class="menulinks">Floor Plan</a></td>
+        </tr>
+        <tr> 
+          <td><a href="http://www.uiuc.edu/ro/boxesandwallsprogramcoordinators.asp" class="menulinks">Program Coordinators</a></td>
+        </tr>
+        <tr> 
+          <td><a href="http://www.uiuc.edu/ro/boxesandwallsresources.asp" class="menulinks">Resource Guide</a></td>
+        </tr>
+        <tr> 
+          <td><a href="http://www.uiuc.edu/ro/boxesandwallssponsors.asp" class="menulinks">Sponsors</a></td>
+        </tr>
+        <tr> 
+          <td><a href="http://www.stophate.uiuc.edu" class="menulinks">Campus 
+            Violence Prevention Campaign</a></td>
+        </tr>
+        <tr>
+          <td><a href="https://www-s.odos.uiuc.edu/stophate/boxeswalls/boxesadmin.asp" class="menulinks">Administration</a></td>
+        </tr>
+        <tr> 
+          <td> 
+            <hr>
+          </td>
+        </tr>
+        <tr> 
+          <td> 
+            <div align="center"><a href="http://www.egroups.com/subscribe/BoxesAndWalls"><img src="http://www.uiuc.edu/ro/boxesandwalls/images/join.gif" width="84" height="47" border="0" alt="Click here to Subscribe
+to Boxes and Walls"></a></div>
+          </td>
+        </tr>
+        <tr> 
+          <td> 
+            <div align="center"><a href="http://www.egroups.com/subscribe/BoxesAndWalls" class="menulinks">Click 
+              to Subscribe to Boxes and Walls</a></div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+
+        </td>
+   
+ <td width="17" height="505">&nbsp;</td>
+    <td width="796" align="center" valign="top" height="505"> 
+      <table width="107%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+    <td width="100%" colspan="2"></td>
+  </tr>
+  <tr>
+    <td width="100%">
+    <p align="center"></td>
+    <td width="100%" rowspan="13">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="100%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="100%">
+    <p align="left"><font size="4" color="#FFA500" face="Arial">
+<H1> <p align ="center"> Registration 2003 </align><br><br>
+
+<?php
+extract($_REQUEST);
+
+
+$dbdate = "2003-" . $month . "-". $day;
+$dbtime = $time . ":00";
+
+
+
+
+/* Connecting, selecting database */
+    $link = mysql_connect("localhost","dhar","monkeyboy")
+        or die("Could not connect");
+    mysql_select_db("boxes") or die("Could not select database");
+
+    /* Performing SQL query */
+    $query = "SELECT numsigned FROM sessions WHERE date=\"$dbdate\" and time=\"$dbtime\" ";
+    $result = mysql_query($query) or die("Query failed");
+    $value =mysql_result($result,0);
+
+
+if ($value >11):
+
+    print " <align=\"center\">Sorry, registration is full for that date and time.";
+    print "  Please go back and select another time.</align>";
+
+else:
+
+    $insert = " INSERT INTO attendees SET name=\"$name\", netid =\"$netid\", date = \"$dbdate\",time=\"$dbtime\", number=\"$number\"  " ;
+    $work = mysql_query($insert) or die ("insert failed");
+
+
+print " Thank you for Registering for Boxes and Walls.  Please print out this confirmation and bring it with you on your tour!";
+
+print " <H1> Name --  $name";
+print " <H1> Date -- $dbdate";
+print " <H1> Time -- $dbtime";
+
+
+mail("bokhari@students.uiuc.edu", "Boxes Registration -- $netid", "The following person registered for boxes: $name\nfor $dbdate at $dbtime and requested $number tickets\nThey have also been emailed a
+confirmation.\n\n");
+mail("$netid","Boxes Registration -- $dbdate","Thank you for registering for Boxes and Walls. \n\nYou are registered for $dbdate at $dbtime, and have requested $number tickets.\n\nIf you have any questions, please contact bokhari@uiuc.edu.\n\nSee you at Boxes and Walls!\n" );
+
+
+endif;
+
+    /* Free resultset */
+    mysql_free_result($result);
+
+    /* Closing connection */
+    mysql_close($link);
+
+?>
+
+
+
+  </tr>
+  <tr>
+    <td width="100%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="100%">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
+
+
